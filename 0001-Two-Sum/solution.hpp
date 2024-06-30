@@ -1,5 +1,5 @@
-#ifndef SOLUTION_001_MAP
-#define SOLUTION_001_MAP
+#ifndef SOLUTION_001
+#define SOLUTION_001
 
 #include <iostream>
 #include <vector>
