@@ -16,7 +16,6 @@ BOOST_AUTO_TEST_CASE(PlainTest)
 
     vector<int> expected{0, 1};
 
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(),
-                                  expected.begin(), expected.end());
+    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
 }
 BOOST_AUTO_TEST_SUITE_END()
