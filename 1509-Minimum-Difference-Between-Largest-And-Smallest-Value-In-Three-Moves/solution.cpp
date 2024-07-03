@@ -18,7 +18,8 @@ int Solution::minDifference(vector<int>& nums) {
 	int right = nums.size() - 1;
 	int minDiff = nums[right] - nums[left];
 	for (int popLeftCount = 0; popLeftCount < 4; popLeftCount++) {
-		minDiff = min(minDiff, nums[right-popLeftCount] - nums[left+popLeftCount]);
+		int popRightCount = 3 - popLeftCount;
+		minDiff = min(minDiff, nums[right-popRightCount] - nums[left+popLeftCount]);
 	}
 	return minDiff;
 }

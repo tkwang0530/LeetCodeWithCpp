@@ -22,4 +22,12 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
     int expected = 1;
     BOOST_CHECK_EQUAL(result, expected);
 }
+
+BOOST_AUTO_TEST_CASE(PlainTest3)
+{
+    vector<int> nums = {3, 100, 20};
+    bool result = Solution().minDifference(nums);
+    int expected = 0;
+    BOOST_CHECK_EQUAL(result, expected);
+}
 BOOST_AUTO_TEST_SUITE_END()
